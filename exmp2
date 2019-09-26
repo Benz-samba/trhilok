@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+name: nodehelloworld
+labels:
+app: helloworld
+spec:
+containers:
+ - name: k8s-demo
+  image: shanmukha443/new43:apachek8s
+   ports:
+ - name: apache-port
+containerPort: 80
+
